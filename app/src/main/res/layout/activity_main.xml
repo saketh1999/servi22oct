@@ -18,18 +18,6 @@
         android:inputType=""
         android:textColor="@color/colorPrimaryDark" />
 
-    <EditText
-        android:id="@+id/main_password"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_alignTop="@id/main_email"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:gravity="center_vertical"
-        android:hint="@string/create_a_password"
-        android:inputType="textPassword"
-        android:textColor="@color/colorPrimaryDark" />
-
     <Button
         android:id="@+id/main_signUp"
         android:layout_width="360dp"
@@ -41,6 +29,18 @@
         android:text="@string/sign_up"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/main_password"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/main_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical"
+        android:hint="@string/create_a_password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimaryDark" />
 
     <TextView
         android:id="@+id/main_google"
@@ -92,8 +92,7 @@
         android:gravity="center"
         android:text="@string/servii"
         android:textSize="65sp"
-        app:fontFamily="@font/cocogoose_trial" />
-
+        app:fontFamily="@font/cocogoose_trial"  />
 
     <TextView
         android:id="@+id/main_ne2"
@@ -184,7 +183,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
         android:background="@color/dark_grey" />
-
 
 
 </RelativeLayout>

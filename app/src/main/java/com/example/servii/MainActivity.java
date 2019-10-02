@@ -18,9 +18,8 @@ public class MainActivity extends AppCompatActivity {
         google.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, LoginpageActivity.class));
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
-
     }
 }
