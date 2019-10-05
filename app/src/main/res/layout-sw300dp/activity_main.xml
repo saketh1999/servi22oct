@@ -30,15 +30,17 @@
 
     <Button
         android:id="@+id/main_signUp"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/main_ne7"
+        android:layout_alignRight="@id/main_ne7"
         android:layout_alignTop="@id/main_password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
         android:background="@drawable/button"
         android:text="@string/sign_up"
         android:textColor="@color/colorPrimary"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/main_google"
@@ -137,8 +139,12 @@
 
     <View
         android:id="@+id/main_ne6"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_alignTop="@id/main_ne1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="130dp"
@@ -146,8 +152,10 @@
 
     <View
         android:id="@+id/main_ne7"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_alignRight="@id/main_ne6"
+        android:layout_alignLeft="@id/main_ne6"
         android:layout_alignTop="@id/main_email"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"

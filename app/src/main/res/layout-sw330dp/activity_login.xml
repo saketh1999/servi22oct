@@ -8,21 +8,21 @@
         android:id="@+id/login_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_ne4"
         android:layout_alignTop="@id/login_ne6"
         android:layout_alignRight="@id/login_ne4"
-        android:layout_alignLeft="@id/login_ne4"
         android:layout_marginTop="30dp"
-        android:text="@string/_91"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="+91 "
         android:textColorHint="@color/colorAccent"
         android:textColorLink="@color/colorPrimary"
-        android:textSize="25sp"
-        android:ems="10"
-        android:inputType="phone" />
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/login_continue"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
         android:layout_alignLeft="@id/login_phone"
         android:layout_alignRight="@id/login_phone"
         android:layout_alignTop="@id/login_phone"
@@ -30,7 +30,7 @@
         android:background="@drawable/button"
         android:text="CONTINUE"
         android:textColor="@color/colorPrimary"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/login_signUp"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:textColor="@color/colorAccent"
         android:gravity="center"
         android:text="@string/servii"
@@ -87,7 +87,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/login"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/login_ne5"
@@ -96,10 +96,10 @@
         android:layout_alignTop="@id/login_ne4"
         android:layout_alignLeft="@id/login_ne4"
         android:layout_alignRight="@id/login_ne4"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="45dp"
         android:text="@string/enter_your_phone_number_to_proceed"
         android:textColor="@color/colorAccent"
-        android:textSize="21sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/login_ne6"
@@ -108,7 +108,7 @@
         android:layout_alignTop="@id/login_ne4"
         android:layout_alignRight="@id/login_ne4"
         android:layout_alignLeft="@id/login_ne4"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="110dp"
         android:text="@string/_10_digit_mobile_number"
         android:textSize="18sp"
         android:textColor="@color/colorAccent" />
@@ -118,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="150dp"
         android:background="@color/colorAccent" />
 
 
