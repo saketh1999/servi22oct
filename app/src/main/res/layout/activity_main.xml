@@ -47,7 +47,7 @@
         android:layout_alignLeft="@id/main_signUp"
         android:layout_alignTop="@id/main_signUp"
         android:layout_marginTop="140dp"
-        android:background="@drawable/text_box"
+        android:background="@drawable/box_darkgrey"
         android:gravity="right|center_vertical"
         android:text="Login with Google   "
         android:textColor="@color/colorPrimaryDark"
@@ -60,7 +60,7 @@
         android:layout_alignTop="@id/main_signUp"
         android:layout_alignRight="@id/main_signUp"
         android:layout_marginTop="140dp"
-        android:background="@drawable/text_box"
+        android:background="@drawable/box_darkgrey"
         android:gravity="right|center_vertical"
         android:text="Login with Facebook  "
         android:textColor="@color/colorPrimaryDark"
@@ -144,7 +144,7 @@
         android:layout_alignTop="@id/main_ne1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="175dp"
-        android:background="@drawable/text_box" />
+        android:background="@drawable/box_darkgrey" />
 
     <View
         android:id="@+id/main_ne7"
@@ -153,7 +153,7 @@
         android:layout_alignTop="@id/main_email"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
-        android:background="@drawable/text_box" />
+        android:background="@drawable/box_darkgrey" />
 
     <View
         android:id="@+id/main_ne8"
