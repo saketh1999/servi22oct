@@ -12,14 +12,14 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/main_ne6"
         android:layout_alignRight="@id/main_ne6"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_alignBottom="@id/main_ne6"
-        android:layout_marginBottom="2dp"
+        android:layout_alignTop="@id/main_ne6"
+        android:layout_margin="10dp"
         android:layout_centerHorizontal="true"
         android:gravity="center_vertical"
         android:hint="@string/email"
         android:inputType=""
+        android:background="@null"
         android:textSize="22sp"
         android:textColor="@color/colorPrimaryDark" />
 
@@ -29,14 +29,14 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/main_ne7"
         android:layout_alignRight="@id/main_ne7"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_alignTop="@id/main_ne7"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="2dp"
+       android:layout_margin="10dp"
         android:layout_alignBottom="@id/main_ne7"
         android:hint="@string/create_a_password"
         android:inputType="textPassword"
         android:textSize="22sp"
+        android:background="@null"
         android:textColor="@color/colorPrimaryDark" />
 
     <View
