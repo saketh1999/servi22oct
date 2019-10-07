@@ -46,18 +46,15 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp" />
 
-    <TextView
+    <ImageView
         android:id="@+id/main_ne1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="290dp"
+        android:layout_height="125dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:text="@string/servii"
-        android:textColor="@color/colorAccent"
-        android:textSize="75sp"
-        app:fontFamily="@font/cocogoose_trial" />
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
 
     <View
         android:id="@+id/login_ne2"
