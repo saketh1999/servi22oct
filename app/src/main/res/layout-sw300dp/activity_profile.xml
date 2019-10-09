@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/login_phone"
+        android:id="@+id/profile_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/login_ne4"
-        android:layout_alignTop="@id/login_ne6"
-        android:layout_alignRight="@id/login_ne4"
+        android:layout_alignLeft="@id/profile_ne4"
+        android:layout_alignTop="@id/profile_ne6"
+        android:layout_alignRight="@id/profile_ne4"
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="phone"
@@ -21,13 +22,27 @@
         android:textColorLink="@color/colorPrimary"
         android:textSize="16sp" />
 
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/profile_ne4"
+        android:layout_alignTop="@id/profile_phone"
+        android:layout_alignRight="@id/profile_ne4"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+
     <Button
-        android:id="@+id/login_continue"
+        android:id="@+id/profile_continue"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_alignLeft="@id/login_phone"
-        android:layout_alignTop="@id/login_phone"
-        android:layout_alignRight="@id/login_phone"
+        android:layout_alignLeft="@id/profile_name"
+        android:layout_alignTop="@id/profile_name"
+        android:layout_alignRight="@id/profile_name"
         android:layout_marginTop="58dp"
         android:background="@drawable/button"
         android:text="CONTINUE"
@@ -35,19 +50,19 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/login_signUp"
+        android:id="@+id/profile_terms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/login_ne3"
+        android:layout_alignLeft="@id/profile_ne3"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="135dp"
+        android:layout_marginLeft="160dp"
         android:layout_marginBottom="15dp"
-        android:text="@string/sign_up"
+        android:text="Terms And Conditions"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12sp" />
+        android:textSize="10sp" />
 
     <ImageView
-        android:id="@+id/login_ne1"
+        android:id="@+id/profile_ne1"
         android:layout_width="180dp"
         android:layout_height="75dp"
         android:layout_alignParentTop="true"
@@ -57,7 +72,7 @@
 
 
     <View
-        android:id="@+id/login_ne2"
+        android:id="@+id/profile_ne2"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignParentBottom="true"
@@ -65,59 +80,60 @@
         android:background="@color/colorPrimaryDark" />
 
     <TextView
-        android:id="@+id/login_ne3"
+        android:id="@+id/profile_ne3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
-        android:text="Don't have an account?                "
-        android:textSize="12sp" />
+        android:text="By creating an account I accept the                                     "
+        android:textSize="10sp" />
 
     <TextView
-        android:id="@+id/login_ne4"
+        android:id="@+id/profile_ne4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/login_ne7"
+        android:layout_alignTop="@id/profile_ne7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="9dp"
         android:layout_marginRight="20dp"
-        android:text="@string/login"
+        android:text="PROFILE"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/login_ne5"
+        android:id="@+id/profile_ne5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/login_ne4"
-        android:layout_alignTop="@id/login_ne4"
-        android:layout_alignRight="@id/login_ne4"
+        android:layout_alignLeft="@id/profile_ne4"
+        android:layout_alignTop="@id/profile_ne4"
+        android:layout_alignRight="@id/profile_ne4"
         android:layout_marginTop="28dp"
-        android:text="@string/enter_your_phone_number_to_proceed"
+        android:text="Enter your personal details"
         android:textColor="@color/colorAccent"
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/login_ne6"
+        android:id="@+id/profile_ne6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/login_ne4"
-        android:layout_alignTop="@id/login_ne5"
-        android:layout_alignRight="@id/login_ne4"
+        android:layout_alignLeft="@id/profile_ne4"
+        android:layout_alignTop="@id/profile_ne5"
+        android:layout_alignRight="@id/profile_ne4"
         android:layout_marginTop="40dp"
         android:text="@string/_10_digit_mobile_number"
         android:textColor="@color/colorAccent"
         android:textSize="11sp" />
 
     <View
-        android:id="@+id/login_ne7"
+        android:id="@+id/profile_ne7"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:layout_alignTop="@id/login_ne1"
+        android:layout_alignTop="@id/profile_ne1"
         android:layout_marginTop="125dp"
         android:background="@color/dark_grey" />
+
 
 </RelativeLayout>

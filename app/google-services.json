@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "519921243272",
+    "firebase_url": "https://servii1.firebaseio.com",
+    "project_id": "servii1",
+    "storage_bucket": "servii1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519921243272:android:d1b2e55e977afd3e5fbb3d",
+        "android_client_info": {
+          "package_name": "com.example.servii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519921243272-8pr9c3gc4v75fg4tos7r6ha04ruen1m3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.servii",
+            "certificate_hash": "0ba9d7c0029ac7033a97555b50e896d98b5e9746"
+          }
+        },
+        {
+          "client_id": "519921243272-79rt5vbe830ohueqqqfn91um0osp9d59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_wYKCbu2vCCykPbCcI0QHHW3oiF9LIl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519921243272-79rt5vbe830ohueqqqfn91um0osp9d59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
