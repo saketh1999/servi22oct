@@ -5,120 +5,121 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <EditText
-        android:id="@+id/login_phone"
+        android:id="@+id/verify_otp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/login_ne4"
-        android:layout_alignTop="@id/login_ne6"
-        android:layout_alignRight="@id/login_ne4"
-        android:layout_marginTop="13dp"
+        android:layout_alignLeft="@id/verify_ne4"
+        android:layout_alignTop="@id/verify_ne6"
+        android:layout_alignRight="@id/verify_ne4"
+        android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="+91 "
-        android:backgroundTint="@color/orange"
+        android:text=""
         android:textCursorDrawable="@color/orange"
+        android:backgroundTint="@color/orange"
         android:textColorHint="@color/colorAccent"
         android:textColorLink="@color/colorPrimary"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
     <Button
-        android:id="@+id/login_continue"
+        android:id="@+id/verify_submit"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignLeft="@id/login_phone"
-        android:layout_alignTop="@id/login_phone"
-        android:layout_alignRight="@id/login_phone"
-        android:layout_marginTop="58dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/verify_otp"
+        android:layout_alignTop="@id/verify_otp"
+        android:layout_alignRight="@id/verify_otp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/button"
-        android:text="Continue"
+        android:text="Submit"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/login_signUp"
+        android:id="@+id/verify_customer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/login_ne3"
+        android:layout_alignLeft="@id/verify_ne3"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="135dp"
-        android:layout_marginBottom="15dp"
-        android:text="@string/sign_up"
+        android:layout_marginLeft="155dp"
+        android:layout_marginBottom="19dp"
+        android:text="customer care"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
     <ImageView
-        android:id="@+id/login_ne1"
-        android:layout_width="180dp"
-        android:layout_height="75dp"
+        android:id="@+id/verify_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
 
-
     <View
-        android:id="@+id/login_ne2"
+        android:id="@+id/verify_ne2"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/colorPrimaryDark" />
 
     <TextView
-        android:id="@+id/login_ne3"
+        android:id="@+id/verify_ne3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
-        android:text="Don't have an account?                "
-        android:textSize="12sp" />
+        android:layout_marginBottom="19dp"
+        android:text="Facing issues? Contact                               "
+        android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/login_ne4"
+        android:id="@+id/verify_ne4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/login_ne7"
+        android:layout_alignTop="@id/verify_ne7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="9dp"
         android:layout_marginRight="20dp"
-        android:text="@string/login"
+        android:text="VERIFY DETAILS"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="20sp" />
+        android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/login_ne5"
+        android:id="@+id/verify_ne5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/login_ne4"
-        android:layout_alignTop="@id/login_ne4"
-        android:layout_alignRight="@id/login_ne4"
-        android:layout_marginTop="28dp"
-        android:text="@string/enter_your_phone_number_to_proceed"
+        android:layout_alignLeft="@id/verify_ne4"
+        android:layout_alignTop="@id/verify_ne4"
+        android:layout_alignRight="@id/verify_ne4"
+        android:layout_marginTop="30dp"
+        android:text="Enter OTP to proceed"
         android:textColor="@color/colorAccent"
-        android:textSize="13sp" />
+        android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/login_ne6"
+        android:id="@+id/verify_ne6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/login_ne4"
-        android:layout_alignTop="@id/login_ne5"
-        android:layout_alignRight="@id/login_ne4"
-        android:layout_marginTop="40dp"
-        android:text="@string/_10_digit_mobile_number"
+        android:layout_alignLeft="@id/verify_ne4"
+        android:layout_alignTop="@id/verify_ne5"
+        android:layout_alignRight="@id/verify_ne4"
+        android:layout_marginTop="44dp"
+        android:text="Enter OTP"
         android:textColor="@color/colorAccent"
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <View
-        android:id="@+id/login_ne7"
+        android:id="@+id/verify_ne7"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:layout_alignTop="@id/login_ne1"
-        android:layout_marginTop="125dp"
+        android:layout_alignTop="@id/verify_ne1"
+        android:layout_marginTop="155dp"
         android:background="@color/dark_grey" />
+
+
 
 </RelativeLayout>

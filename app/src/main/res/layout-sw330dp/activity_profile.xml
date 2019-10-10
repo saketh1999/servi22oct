@@ -29,10 +29,11 @@
         android:layout_alignLeft="@id/profile_ne4"
         android:layout_alignTop="@id/profile_phone"
         android:layout_alignRight="@id/profile_ne4"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="62dp"
         android:ems="10"
         android:hint="Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
 
 
     <Button
@@ -40,11 +41,12 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignLeft="@id/profile_name"
-        android:layout_alignRight="@id/profile_name"
         android:layout_alignTop="@id/profile_name"
-        android:layout_marginTop="62dp"
+        android:layout_alignRight="@id/profile_name"
+        android:layout_marginTop="70dp"
         android:background="@drawable/button"
-        android:text="CONTINUE"
+        android:text="Continue"
+        android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp" />
 
