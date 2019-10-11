@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode ==101) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
@@ -169,12 +168,19 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            boolean isNew = task.getResult().getAdditionalUserInfo().isNewUser();
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(MainActivity.this, "Google sign in successful", Toast.LENGTH_SHORT).show();
                             Log.d(TAG, "signInWithCredential:success");
-                            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
-                            FirebaseUser user = mAuth.getCurrentUser();
+                            user = mAuth.getCurrentUser();
                             updateUI(user);
+                            if(isNew==true){
+                                startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+                            }
+                            else
+                            {
+                                startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                            }
                         } else {
                             // If sign in fails, display a message to the user.
                             Toast.makeText(MainActivity.this, "Google sign in failed", Toast.LENGTH_SHORT).show();
