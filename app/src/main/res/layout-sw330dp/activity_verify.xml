@@ -4,6 +4,24 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <com.bachors.prefixinput.EditText
+        android:id="@+id/verify_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/verify_ne4"
+        android:layout_alignTop="@id/verify_ne6"
+        android:layout_alignRight="@id/verify_ne4"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="+91"
+        android:textCursorDrawable="@color/orange"
+        android:backgroundTint="@color/orange"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="18sp" />
+
+
     <EditText
         android:id="@+id/verify_otp"
         android:layout_width="wrap_content"
@@ -15,14 +33,14 @@
         android:ems="10"
         android:inputType="phone"
         android:text=""
-        android:textCursorDrawable="@color/orange"
-        android:backgroundTint="@color/orange"
+        android:hint="Enter OTP"
+        android:visibility="invisible"
         android:textColorHint="@color/colorAccent"
         android:textColorLink="@color/colorPrimary"
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/verify_submit"
+        android:id="@+id/verify_continue"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignLeft="@id/verify_otp"
@@ -30,7 +48,7 @@
         android:layout_alignRight="@id/verify_otp"
         android:layout_marginTop="70dp"
         android:background="@drawable/button"
-        android:text="Submit"
+        android:text="Continue"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp" />
@@ -84,7 +102,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="9dp"
         android:layout_marginRight="20dp"
-        android:text="VERIFY DETAILS"
+        android:text="SIGN UP"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="22sp" />
 
@@ -96,7 +114,7 @@
         android:layout_alignTop="@id/verify_ne4"
         android:layout_alignRight="@id/verify_ne4"
         android:layout_marginTop="30dp"
-        android:text="Enter OTP to proceed"
+        android:text="Enter your mobile number"
         android:textColor="@color/colorAccent"
         android:textSize="14sp" />
 
@@ -108,7 +126,7 @@
         android:layout_alignTop="@id/verify_ne5"
         android:layout_alignRight="@id/verify_ne4"
         android:layout_marginTop="44dp"
-        android:text="Enter OTP"
+        android:text="10 digit mobile number"
         android:textColor="@color/colorAccent"
         android:textSize="12sp" />
 

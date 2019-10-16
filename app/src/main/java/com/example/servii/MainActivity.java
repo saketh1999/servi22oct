@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
                             if(task.isSuccessful()){
                                 Toast.makeText(MainActivity.this, "Log in successful",Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+                                startActivity(new Intent(MainActivity.this, VerifyActivity.class));
                             }
                             else{
                                 String message=task.getException().toString();
@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
                             user = mAuth.getCurrentUser();
                             updateUI(user);
                             if(isNew==true){
-                                startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+                                startActivity(new Intent(MainActivity.this, VerifyActivity.class));
                             }
                             else
                             {
@@ -233,19 +233,25 @@ public class MainActivity extends AppCompatActivity {
 
     private void handleFacebookAccessToken(AccessToken token) {
         Log.d(TAG, "handleFacebookAccessToken:" + token);
-
         AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            boolean isNew = task.getResult().getAdditionalUserInfo().isNewUser();
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
                             Toast.makeText(MainActivity.this, "Facebook sign in successful", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateUI(user);
-                            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+                            if(isNew==true){
+                                startActivity(new Intent(MainActivity.this, VerifyActivity.class));
+                            }
+                            else
+                            {
+                                startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                            }
 
                         } else {
                             // If sign in fails, display a message to the user.

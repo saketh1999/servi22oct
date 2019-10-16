@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_Container"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/profile_phone"
+        android:id="@+id/profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/profile_ne4"
@@ -14,8 +15,8 @@
         android:layout_alignRight="@id/profile_ne4"
         android:layout_marginTop="15dp"
         android:ems="10"
-        android:inputType="phone"
-        android:text="+91 "
+        android:inputType="text"
+        android:hint="Enter your name"
         android:textCursorDrawable="@color/orange"
         android:backgroundTint="@color/orange"
         android:textColorHint="@color/colorAccent"
@@ -23,26 +24,29 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/profile_name"
+        android:id="@+id/profile_locality"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/profile_ne4"
-        android:layout_alignTop="@id/profile_phone"
-        android:layout_alignRight="@id/profile_ne4"
-        android:layout_marginTop="62dp"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textSize="18sp" />
-
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/profile_ne8"
+        android:layout_alignRight="@id/profile_ne8"
+        android:layout_alignBottom="@id/profile_ne8"
+        android:layout_alignTop="@id/profile_ne8"
+        android:layout_margin="7dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:hint="Select your locality"
+        android:inputType=""
+        android:background="@null"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/profile_continue"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_alignLeft="@id/profile_name"
-        android:layout_alignTop="@id/profile_name"
-        android:layout_alignRight="@id/profile_name"
+        android:layout_alignLeft="@id/profile_ne8"
+        android:layout_alignTop="@id/profile_locality"
+        android:layout_alignRight="@id/profile_ne8"
         android:layout_marginTop="70dp"
         android:background="@drawable/button"
         android:text="Continue"
@@ -111,7 +115,7 @@
         android:layout_alignTop="@id/profile_ne4"
         android:layout_alignRight="@id/profile_ne4"
         android:layout_marginTop="30dp"
-        android:text="Enter your personal details"
+        android:text="Enter your details"
         android:textColor="@color/colorAccent"
         android:textSize="14sp" />
 
@@ -123,7 +127,7 @@
         android:layout_alignTop="@id/profile_ne5"
         android:layout_alignRight="@id/profile_ne4"
         android:layout_marginTop="44dp"
-        android:text="@string/_10_digit_mobile_number"
+        android:text="Enter your name"
         android:textColor="@color/colorAccent"
         android:textSize="12sp" />
 
@@ -134,6 +138,33 @@
         android:layout_alignTop="@id/profile_ne1"
         android:layout_marginTop="155dp"
         android:background="@color/dark_grey" />
+
+    <View
+        android:id="@+id/profile_ne8"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/profile_ne9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_darkgrey" />
+
+    <TextView
+        android:id="@+id/profile_ne9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/profile_ne4"
+        android:layout_alignTop="@id/profile_name"
+        android:layout_alignRight="@id/profile_ne4"
+        android:layout_marginTop="63dp"
+        android:text="Select locality"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+
 
 
 
