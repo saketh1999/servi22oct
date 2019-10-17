@@ -37,6 +37,11 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Arrays;
 
@@ -214,13 +219,14 @@ public class MainActivity extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
                             user = mAuth.getCurrentUser();
                             updateUI(user);
-                            if(isNew==true){
-                                startActivity(new Intent(MainActivity.this, VerifyActivity.class));
-                            }
-                            else
-                            {
-                                startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                            }
+                          if(isNew==true)
+                          {
+                              startActivity(new Intent(MainActivity.this, VerifyActivity.class));
+                          }
+                          else
+                          {
+                              startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                          }
                         } else {
                             // If sign in fails, display a message to the user.
                             Toast.makeText(MainActivity.this, "Google sign in failed", Toast.LENGTH_SHORT).show();
@@ -245,7 +251,8 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Facebook sign in successful", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateUI(user);
-                            if(isNew==true){
+                            if(isNew==true)
+                            {
                                 startActivity(new Intent(MainActivity.this, VerifyActivity.class));
                             }
                             else
@@ -266,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void updateUI(FirebaseUser currentUser)
+    private void updateUI(FirebaseUser user)
     {
         if (user != null) {
             // Name, email address, and profile photo Url
@@ -308,4 +315,6 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alertDialog=builder.create();
         alertDialog.show();
     }
+
+
 }

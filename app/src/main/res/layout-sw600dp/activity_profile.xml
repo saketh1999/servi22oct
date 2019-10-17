@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
+    <Spinner
         android:id="@+id/profile_locality"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,8 +16,7 @@
         android:layout_alignTop="@id/profile_ne8"
         android:layout_margin="10dp"
         android:layout_centerHorizontal="true"
-        android:gravity="center_vertical"
-        android:hint="Select your locality"
+        android:gravity="left|center_vertical"
         android:inputType=""
         android:background="@null"
         android:textSize="22sp"
@@ -155,6 +154,16 @@
         android:text="Select locality"
         android:textColor="@color/colorAccent"
         android:textSize="17sp" />
+    <ImageView
+        android:id="@+id/profile_ne10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/profile_locality"
+        android:layout_alignRight="@id/profile_ne4"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignBottom="@id/profile_locality"
+        android:background="@drawable/spinner"/>
 
 
 

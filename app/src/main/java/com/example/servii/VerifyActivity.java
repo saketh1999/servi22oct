@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.gms.tasks.TaskExecutors;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,6 +19,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.bachors.prefixinput.EditText;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -37,12 +38,10 @@ public class VerifyActivity extends AppCompatActivity {
     private String mVerificationId;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     private int flag=0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify);
-
         phone=(EditText) findViewById(R.id.verify_phone);
         otp=(android.widget.EditText) findViewById(R.id.verify_otp);
         cont=(Button)findViewById(R.id.verify_continue);
@@ -77,6 +76,7 @@ public class VerifyActivity extends AppCompatActivity {
                                                 Toast.LENGTH_SHORT).show();
                                         FirebaseUser user = task.getResult().getUser();
                                         updateUI(user);
+                                        SendUserDatabase();
                                         startActivity(new Intent(VerifyActivity.this, ProfileActivity.class));
                                     }
                                     else {
@@ -108,6 +108,7 @@ public class VerifyActivity extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
                                     FirebaseUser user = task.getResult().getUser();
                                     updateUI(user);
+                                    SendUserDatabase();
                                     startActivity(new Intent(VerifyActivity.this, ProfileActivity.class));
                                 }
                                 else {
@@ -166,6 +167,14 @@ public class VerifyActivity extends AppCompatActivity {
             String uid = user.getUid();
         }
     }
+    private void SendUserDatabase()
+    {
+        FirebaseDatabase mbase=FirebaseDatabase.getInstance();
+        DatabaseReference mRef=mbase.getReference("Users");
+        String mob=phone.getText().toString();
+        mobile p= new mobile(mob);
+        mRef.child(mAuth.getUid()).child("Mobile").setValue(p);
 
+    }
 
 }

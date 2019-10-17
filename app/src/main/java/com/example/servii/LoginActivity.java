@@ -7,6 +7,7 @@ import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText phone;
+    String mob;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

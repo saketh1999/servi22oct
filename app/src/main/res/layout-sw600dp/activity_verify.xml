@@ -53,7 +53,7 @@
         android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/verify_signUp"
+        android:id="@+id/verify_customer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/verify_ne3"

@@ -23,20 +23,20 @@
         android:textColorLink="@color/colorPrimary"
         android:textSize="18sp" />
 
-    <EditText
+    <Spinner
         android:id="@+id/profile_locality"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignLeft="@id/profile_ne8"
+        android:layout_alignTop="@id/profile_ne8"
         android:layout_alignRight="@id/profile_ne8"
         android:layout_alignBottom="@id/profile_ne8"
-        android:layout_alignTop="@id/profile_ne8"
-        android:layout_margin="7dp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_vertical"
-        android:hint="Select your locality"
-        android:inputType=""
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
         android:background="@null"
+        android:gravity="left|center_vertical"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp" />
 
@@ -164,8 +164,15 @@
         android:textColor="@color/colorAccent"
         android:textSize="12sp" />
 
-
-
+    <ImageView
+        android:id="@+id/profile_ne10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/profile_locality"
+        android:layout_alignRight="@id/profile_ne4"
+        android:layout_alignBottom="@id/profile_locality"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/spinner" />
 
 
 </RelativeLayout>
