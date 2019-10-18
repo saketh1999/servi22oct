@@ -14,9 +14,26 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="+91 "
+        android:text="+91"
         android:textCursorDrawable="@color/orange"
         android:backgroundTint="@color/orange"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/login_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_ne4"
+        android:layout_alignTop="@id/login_ne6"
+        android:layout_alignRight="@id/login_ne4"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text=""
+        android:hint="Enter OTP"
+        android:visibility="invisible"
         android:textColorHint="@color/colorAccent"
         android:textColorLink="@color/colorPrimary"
         android:textSize="18sp" />

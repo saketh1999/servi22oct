@@ -36,6 +36,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.FirebaseUserMetadata;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -144,13 +145,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
-    public void onStart() {
+    protected void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        user = mAuth.getCurrentUser();
-        updateUI(user);
-        if(user!=null)
+        FirebaseUser user= mAuth.getCurrentUser();
+        if(user !=null)
         {
             startActivity(new Intent(MainActivity.this, HomeActivity.class));
         }
@@ -210,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
         AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
@@ -219,15 +220,18 @@ public class MainActivity extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
                             user = mAuth.getCurrentUser();
                             updateUI(user);
-                          if(isNew==true)
-                          {
-                              startActivity(new Intent(MainActivity.this, VerifyActivity.class));
-                          }
-                          else
-                          {
-                              startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                          }
-                        } else {
+                            if(isNew==true)
+                            {
+                                startActivity(new Intent(MainActivity.this, VerifyActivity.class));
+                            }
+                            else
+                            {
+                                startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                            }
+
+
+                        } else
+                        {
                             // If sign in fails, display a message to the user.
                             Toast.makeText(MainActivity.this, "Google sign in failed", Toast.LENGTH_SHORT).show();
                             Log.w(TAG, "signInWithCredential:failure", task.getException());

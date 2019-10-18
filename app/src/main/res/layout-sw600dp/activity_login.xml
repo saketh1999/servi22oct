@@ -21,6 +21,23 @@
         android:textColorLink="@color/colorPrimary"
         android:textSize="20sp" />
 
+    <EditText
+        android:id="@+id/login_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_ne4"
+        android:layout_alignTop="@id/login_ne6"
+        android:layout_alignRight="@id/login_ne4"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text=""
+        android:visibility="invisible"
+        android:hint="Enter OTP"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/login_continue"
         android:layout_width="wrap_content"

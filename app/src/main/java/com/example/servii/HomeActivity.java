@@ -35,6 +35,12 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        UserValidate();
+    }
+
     public void onBackPressed()
     {
         final AlertDialog.Builder builder= new AlertDialog.Builder(HomeActivity.this);
@@ -59,6 +65,41 @@ public class HomeActivity extends AppCompatActivity {
         AlertDialog alertDialog=builder.create();
         alertDialog.show();
     }
+    private void UserValidate()
+    {
+        FirebaseDatabase mbase=FirebaseDatabase.getInstance();
+        DatabaseReference mRef=mbase.getReference("Users");
+        mRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
+                if(!dataSnapshot.child(mAuth.getUid()).exists())
+                {
+                    Toast.makeText(HomeActivity.this, "We haven't got your mobile number. Please enter mobile number first",
+                            Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(HomeActivity.this, VerifyActivity.class));
+                }
+                else if(!dataSnapshot.child(mAuth.getUid()).child("Profile").exists())
+                {
+                    Toast.makeText(HomeActivity.this, "We haven't got your name. Please enter your name first",
+                            Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+                }
+                else
+                {
+                    startActivity(new Intent(HomeActivity.this, MainHomeActivity.class));
+                    Toast.makeText(HomeActivity.this, "Welcome to home activity",
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(HomeActivity.this, databaseError.getCode(),Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+    }
 
 }
