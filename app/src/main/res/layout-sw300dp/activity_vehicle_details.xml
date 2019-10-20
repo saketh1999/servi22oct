@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/vehDetails_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vehDetails_ne1"
+        android:layout_alignBottom="@id/vehDetails_ne2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@id/vehDetails_ne1"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <Spinner
+        android:id="@+id/vehDetails_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/vehDetails_ne8"
+        android:layout_alignTop="@id/vehDetails_ne8"
+        android:layout_alignRight="@id/vehDetails_ne8"
+        android:layout_alignBottom="@id/vehDetails_ne8"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/vehDetails_model"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/vehDetails_ne10"
+        android:layout_alignTop="@id/vehDetails_ne10"
+        android:layout_alignRight="@id/vehDetails_ne10"
+        android:layout_alignBottom="@id/vehDetails_ne10"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/vehDetails_licence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehDetails_ne11"
+        android:layout_alignLeft="@id/vehDetails_ne11"
+        android:layout_alignRight="@+id/vehDetails_ne11"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:hint="Licence plate number"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/vehDetails_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/vehDetails_licence"
+        android:layout_alignTop="@id/vehDetails_licence"
+        android:layout_alignRight="@id/vehDetails_licence"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/vehDetails_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehDetails_ne6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="15dp"
+        android:text="customer care"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/vehDetails_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
+    <View
+        android:id="@+id/vehDetails_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/vehDetails_ne1"
+        android:layout_marginTop="91dp"
+        android:background="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/vehDetails_ne3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vehDetails_ne2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="VEHICLE DETAILS"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/vehDetails_ne4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehDetails_ne3"
+        android:layout_alignTop="@id/vehDetails_ne3"
+        android:layout_alignRight="@id/vehDetails_ne3"
+        android:layout_marginTop="28dp"
+        android:text="Help us identify your vehicle"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/vehDetails_ne5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/vehDetails_ne6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Need help? Contact                               "
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/VehDetails_ne7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vehDetails_ne8"
+        android:layout_alignRight="@id/vehDetails_ne8"
+        android:layout_alignBottom="@id/vehDetails_ne8"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/spinner" />
+
+    <View
+        android:id="@+id/vehDetails_ne8"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/vehDetails_ne4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_darkgrey" />
+
+    <ImageView
+        android:id="@+id/Vehdetails_ne9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vehDetails_ne10"
+        android:layout_alignRight="@id/vehDetails_ne10"
+        android:layout_alignBottom="@id/vehDetails_ne10"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/spinner" />
+
+    <View
+        android:id="@+id/vehDetails_ne10"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/vehDetails_ne8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/box_darkgrey" />
+
+    <TextView
+        android:id="@+id/vehDetails_ne11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehDetails_ne10"
+        android:layout_alignLeft="@id/vehDetails_ne10"
+        android:layout_alignRight="@id/vehDetails_ne10"
+        android:layout_marginTop="25dp"
+        android:text="Enter your licence plate number"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

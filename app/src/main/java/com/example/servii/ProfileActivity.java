@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -56,11 +57,13 @@ public class ProfileActivity extends AppCompatActivity {
                 Name=name.getText().toString();
                 if(Name.isEmpty()||flag==0)
                 {
-                    cont.setVisibility(View.INVISIBLE);
+                    cont.setClickable(false);
+                    cont.setBackgroundColor(cont.getContext().getResources().getColor(R.color.colorAccent));
                 }
                 else
                 {
-                    cont.setVisibility(View.VISIBLE);
+                    cont.setClickable(true);
+                    cont.setBackgroundColor(cont.getContext().getResources().getColor(R.color.orange));
                 }
 
             }
@@ -69,13 +72,15 @@ public class ProfileActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 Name=name.getText().toString();
                 if(Name.isEmpty()||flag==0)
-                {
-                    cont.setVisibility(View.INVISIBLE);
-                }
-                else
-                {
-                    cont.setVisibility(View.VISIBLE);
-                }
+                    {
+                        cont.setClickable(false);
+                        cont.setBackgroundColor(cont.getContext().getResources().getColor(R.color.colorAccent));
+                    }
+                    else
+                    {
+                        cont.setClickable(true);
+                        cont.setBackgroundColor(cont.getContext().getResources().getColor(R.color.orange));
+                    }
 
             }
 
@@ -84,11 +89,13 @@ public class ProfileActivity extends AppCompatActivity {
                 Name=name.getText().toString();
                 if(Name.isEmpty()||flag==0)
                 {
-                    cont.setVisibility(View.INVISIBLE);
+                    cont.setClickable(false);
+                    cont.setBackgroundColor(cont.getContext().getResources().getColor(R.color.colorAccent));
                 }
                 else
                 {
-                    cont.setVisibility(View.VISIBLE);
+                    cont.setClickable(true);
+                    cont.setBackgroundColor(cont.getContext().getResources().getColor(R.color.orange));
                 }
             }
         });
@@ -103,11 +110,13 @@ public class ProfileActivity extends AppCompatActivity {
                 Name=name.getText().toString();
                 if(Name.isEmpty()||flag==0)
                 {
-                    cont.setVisibility(View.INVISIBLE);
+                    cont.setClickable(false);
+                    cont.setBackgroundColor(cont.getContext().getResources().getColor(R.color.colorAccent));
                 }
                 else
                 {
-                    cont.setVisibility(View.VISIBLE);
+                    cont.setClickable(true);
+                    cont.setBackgroundColor(cont.getContext().getResources().getColor(R.color.orange));
                 }
 
             }

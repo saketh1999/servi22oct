@@ -44,7 +44,8 @@
         android:layout_alignTop="@id/vehicle_ne10"
         android:layout_alignBottom="@id/vehicle_ne10"
         android:layout_toLeftOf="@id/vehicle_ne11"
-        android:layout_toRightOf="@id/vehicle_ne10"></Spinner>
+        android:layout_toRightOf="@id/vehicle_ne10"
+        android:background="@null"></Spinner>
 
 
     <Button
@@ -141,7 +142,7 @@
         android:layout_alignRight="@id/vehicle_2whiller"
         android:layout_marginTop="210dp"
         android:gravity="center"
-        android:text="2 Whiller"
+        android:text="2 Wheeler"
         android:textColor="@color/colorAccent"
         android:textSize="22dp" />
 
@@ -154,7 +155,7 @@
         android:layout_alignRight="@id/vehicle_4whiller"
         android:layout_marginTop="210dp"
         android:gravity="center"
-        android:text="4 Whiller"
+        android:text="4 Wheeler"
         android:textColor="@color/colorAccent"
         android:textSize="22dp" />
 
@@ -191,5 +192,29 @@
         android:layout_alignLeft="@id/vehicle_ne10"
         android:layout_alignRight="@id/vehicle_ne11"
         android:background="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/vehicle_ne13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vehicle_spinner"
+        android:layout_alignRight="@id/vehicle_spinner"
+        android:layout_alignBottom="@id/vehicle_spinner"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="-30dp"
+        android:background="@drawable/spinner" />
+
+    <ImageView
+        android:id="@+id/vehicle_back"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/velicle_ne1"
+        android:layout_alignBottom="@id/vehicle_ne2"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="-40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/velicle_ne1"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
 
 </RelativeLayout>

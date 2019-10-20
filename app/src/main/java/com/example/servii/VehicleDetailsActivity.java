@@ -5,21 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
-public class MainHomeActivity extends AppCompatActivity {
+public class VehicleDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_home);
+        setContentView(R.layout.activity_vehicle_details);
 
-        View view=(View) findViewById(R.id.main_home_graphic_for_wash);
-
-        view.setOnClickListener(new View.OnClickListener() {
+        Button cont=findViewById(R.id.vehDetails_continue);
+        cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainHomeActivity.this, VehicleActivity.class ));
+                startActivity(new Intent(VehicleDetailsActivity.this, PlanActivity.class));
             }
         });
+
     }
 }
