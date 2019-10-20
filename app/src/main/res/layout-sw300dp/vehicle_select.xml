@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/vehicle_2whiller"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@id/vehicle_ne4"
+        android:layout_alignTop="@id/vehicle_ne4"
+        android:layout_alignRight="@id/vehicle_ne7"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/box_orange" />
+
+    <ImageView
+        android:id="@+id/vehicle_4whiller"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@id/vehicle_ne7"
+        android:layout_alignTop="@id/vehicle_2whiller"
+        android:layout_alignRight="@id/vehicle_ne4"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/box_orange" />
+
+    <TextView
+        android:id="@+id/vehicle_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehicle_ne6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="12dp"
+        android:text="customer care"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/vehicle_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vehicle_ne10"
+        android:layout_alignBottom="@id/vehicle_ne10"
+        android:layout_toLeftOf="@id/vehicle_ne11"
+        android:layout_toRightOf="@id/vehicle_ne10"
+        android:layout_marginRight="-20dp"></Spinner>
+
+
+    <Button
+        android:id="@+id/vehicle_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/vehicle_2whiller"
+        android:layout_alignTop="@id/vehicle_ne10"
+        android:layout_alignRight="@id/vehicle_4whiller"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/velicle_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
+    <View
+        android:id="@+id/vehicle_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/velicle_ne1"
+        android:layout_marginTop="91dp"
+        android:background="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/vehicle_ne3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vehicle_ne2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="VEHICLE TYPE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/vehicle_ne4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehicle_ne3"
+        android:layout_alignTop="@id/vehicle_ne3"
+        android:layout_alignRight="@id/vehicle_ne3"
+        android:layout_marginTop="28dp"
+        android:text="Help us identify your vehicle"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/vehicle_ne5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/vehicle_ne6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="Need help? Contact                               "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/vehicle_ne7"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vehicle_2whiller"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="@string/or"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/vehicle_ne8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehicle_2whiller"
+        android:layout_alignTop="@id/vehicle_2whiller"
+        android:layout_alignRight="@id/vehicle_2whiller"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:text="2 Whiller"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vehicle_ne9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehicle_4whiller"
+        android:layout_alignTop="@id/vehicle_4whiller"
+        android:layout_alignRight="@id/vehicle_4whiller"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:text="4 Whiller"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vehicle_ne10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehicle_2whiller"
+        android:layout_alignTop="@id/vehicle_2whiller"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="150dp"
+        android:text="    My vehicle is"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vehicle_ne11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehicle_4whiller"
+        android:layout_alignTop="@id/vehicle_ne10"
+        android:layout_alignRight="@id/vehicle_4whiller"
+        android:layout_marginLeft="20dp"
+        android:text="   in color"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/vehicle_ne12"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/vehicle_ne10"
+        android:layout_alignTop="@id/vehicle_ne10"
+        android:layout_alignRight="@id/vehicle_ne11"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent" />
+</RelativeLayout>

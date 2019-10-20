@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/main_home_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
+    <TextView
+        android:id="@+id/main_home_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_home_ne1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="92dp"
+        android:text="Welcome "
+
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/main_home_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_toRightOf="@id/main_home_ne2"
+        android:layout_alignTop="@id/main_home_ne2"/>
+
+    <TextView
+        android:id="@+id/main_home_ne3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refer and earn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignTop="@id/main_home_ne2"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_home_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_app_bar"
+        android:background="@color/light_grey"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ScrollView
+        android:id="@+id/main_home_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_home_ne1"
+       android:layout_above="@id/main_home_nav"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="171dp"
+        android:paddingEnd="10dp">
+
+
+<RelativeLayout
+    android:id="@+id/main_home_relScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/main_home_graphic_for_wash"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/box_darkgrey" />
+
+    <View
+        android:id="@+id/main_home_graphic_for_service"
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:layout_alignTop="@id/main_home_graphic_for_wash"
+        android:layout_alignLeft="@id/main_home_graphic_for_wash"
+        android:layout_alignRight="@id/main_home_graphic_for_wash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/box_darkgrey" />
+
+    <View
+        android:id="@+id/main_home_graphic_for_repair"
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:layout_alignTop="@id/main_home_graphic_for_service"
+        android:layout_alignLeft="@id/main_home_graphic_for_wash"
+        android:layout_alignRight="@id/main_home_graphic_for_wash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/box_darkgrey" />
+
+</RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
