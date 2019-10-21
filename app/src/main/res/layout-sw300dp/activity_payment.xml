@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/pay_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_left_arrow"
+        android:layout_alignTop="@id/pay_ne1"
+        android:layout_alignBottom="@id/pay_ne2"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@id/pay_ne1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp" />
+
+    <View
+        android:id="@+id/pay_paytm"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@id/pay_ne3"
+        android:layout_alignTop="@id/pay_ne4"
+        android:layout_alignRight="@id/pay_ne3"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/box_darkgrey" />
+
+    <View
+        android:id="@+id/pay_upi"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/pay_paytm"
+        android:layout_alignLeft="@id/pay_ne3"
+        android:layout_alignRight="@id/pay_ne3"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box_darkgrey" />
+
+    <View
+        android:id="@+id/pay_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@id/pay_ne5"
+        android:layout_alignLeft="@id/pay_ne3"
+        android:layout_alignRight="@id/pay_ne3"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/box_darkgrey" />
+
+    <TextView
+        android:id="@+id/pay_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pay_ne6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="12dp"
+        android:text="customer care"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/pay_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
+    <View
+        android:id="@+id/pay_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/pay_ne1"
+        android:layout_marginTop="91dp"
+        android:background="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/pay_ne3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pay_ne2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="PAYMENTS"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pay_ne4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pay_ne3"
+        android:layout_alignTop="@id/pay_ne3"
+        android:layout_marginTop="30dp"
+        android:text="To pay: "
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/pay_ne5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/pay_ne6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="Need help? Contact                               "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/pay_ne7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pay_ne4"
+        android:layout_alignRight="@id/pay_ne3"
+        android:layout_toRightOf="@id/pay_ne4"
+        android:text="₹1200"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/pay_ne8"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pay_paytm"
+        android:layout_alignTop="@id/pay_paytm"
+        android:layout_alignBottom="@id/pay_paytm"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/paytm" />
+
+    <ImageView
+        android:id="@+id/pay_ne9"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pay_upi"
+        android:layout_alignTop="@id/pay_upi"
+        android:layout_alignBottom="@id/pay_upi"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/phonepe" />
+
+    <ImageView
+        android:id="@+id/pay_ne10"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pay_cash"
+        android:layout_alignTop="@id/pay_cash"
+        android:layout_alignBottom="@id/pay_cash"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/cash" />
+
+    <TextView
+        android:id="@+id/pay_ne11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pay_paytm"
+        android:layout_alignBottom="@id/pay_paytm"
+        android:layout_toRightOf="@id/pay_ne8"
+        android:gravity="center"
+        android:text="PayTM"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/pay_ne12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pay_upi"
+        android:layout_alignBottom="@id/pay_upi"
+        android:layout_toRightOf="@id/pay_ne9"
+        android:gravity="center"
+        android:text="PhonePe/ BHIM UPI"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/pay_ne13"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignTop="@id/pay_cash"
+        android:layout_toRightOf="@id/pay_ne10"
+        android:gravity="center"
+        android:text="Cash"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pay_ne14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_ne13"
+        android:layout_alignLeft="@id/pay_ne13"
+        android:layout_alignRight="@id/pay_cash"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="20dp"
+        android:text="Please keep the exact change handly to help us serve you better"
+        android:textColor="@color/colorAccent"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/pay_ne15"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pay_paytm"
+        android:layout_alignRight="@id/pay_paytm"
+        android:layout_alignBottom="@id/pay_paytm"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="18dp"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+    <ImageView
+        android:id="@+id/pay_ne16"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pay_upi"
+        android:layout_alignRight="@id/pay_upi"
+        android:layout_alignBottom="@id/pay_upi"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="18dp"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+    <ImageView
+        android:id="@+id/pay_ne17"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pay_cash"
+        android:layout_alignRight="@id/pay_cash"
+        android:layout_alignBottom="@id/pay_cash"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+</RelativeLayout>
