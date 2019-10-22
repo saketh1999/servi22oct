@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/vehicle_2whiller"
         android:layout_width="wrap_content"
         android:layout_height="110dp"
@@ -15,7 +15,7 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/box_orange" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/vehicle_4whiller"
         android:layout_width="wrap_content"
         android:layout_height="110dp"

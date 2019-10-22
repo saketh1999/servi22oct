@@ -15,7 +15,39 @@
       },
       "oauth_client": [
         {
-          "client_id": "519921243272-8pr9c3gc4v75fg4tos7r6ha04ruen1m3.apps.googleusercontent.com",
+          "client_id": "519921243272-kimfj4n7i7rqfcptl9kun3627l5l4v0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.servii",
+            "certificate_hash": "37f73280d739bce8c1857a74cc8d3b9164f687c9"
+          }
+        },
+        {
+          "client_id": "519921243272-128lthr88mnhir2k7ing8r9kof7pak7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.servii",
+            "certificate_hash": "d5b62381ce4cda227d6dffce616e15b18b11b128"
+          }
+        },
+        {
+          "client_id": "519921243272-m58a6e171e08d7a47o74o3v70rlj4g4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.servii",
+            "certificate_hash": "5c3c4acba211e0d1cb2bebf392075b50c063c949"
+          }
+        },
+        {
+          "client_id": "519921243272-8l8oja172qqh0q30cc1v84p9k2e68180.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.servii",
+            "certificate_hash": "e62d01b96d801ccc9c2e2b8655f9b992e978aefc"
+          }
+        },
+        {
+          "client_id": "519921243272-jt5o62n5lqb3oci2re3vmnovqb5o0m2h.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.servii",
