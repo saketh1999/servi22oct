@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class AddressActivity extends AppCompatActivity {
+public class CleaningActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_address);
+        setContentView(R.layout.activity_cleaning);
 
-        Button cont=findViewById(R.id.add_continue);
+        Button cont=findViewById(R.id.cl_continue);
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(AddressActivity.this, PaymentActivity.class));
+                startActivity(new Intent(CleaningActivity.this, ScheduleActivity.class));
             }
         });
     }

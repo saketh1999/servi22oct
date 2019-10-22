@@ -93,6 +93,90 @@
                 android:layout_marginTop="115dp"
                 android:background="@drawable/box_darkgrey" />
 
+            <TextView
+                android:id="@+id/main_home_ne4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---Graphic for wash---"
+                android:layout_alignTop="@id/main_home_graphic_for_wash"
+                android:layout_alignLeft="@id/main_home_graphic_for_wash"
+                android:layout_alignRight="@id/main_home_graphic_for_wash"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/main_home_ne5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 days remaining"
+                android:layout_alignBottom="@id/main_home_graphic_for_wash"
+                android:layout_alignLeft="@id/main_home_graphic_for_wash"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/main_home_rightArrow"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/main_home_graphic_for_wash"
+                android:layout_alignTop="@id/main_home_graphic_for_wash"
+                android:layout_alignRight="@id/main_home_graphic_for_wash"
+                app:srcCompat="@drawable/ic_arrow_right"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/main_home_ne6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_home_graphic_for_service"
+                android:layout_alignTop="@id/main_home_graphic_for_service"
+                android:layout_alignRight="@id/main_home_graphic_for_service"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:text="--Graphic for servicing--"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/main_home_ne7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_home_graphic_for_service"
+                android:layout_below="@id/main_home_ne6"
+                android:layout_alignRight="@id/main_home_graphic_for_service"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Coming soon"
+                android:fontFamily="@font/cocogoose_trial"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/main_home_ne8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_home_graphic_for_repair"
+                android:layout_alignTop="@id/main_home_graphic_for_repair"
+                android:layout_alignRight="@id/main_home_graphic_for_repair"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:text="--Graphic for repair--"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/main_home_ne9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_home_ne8"
+                android:layout_alignLeft="@id/main_home_graphic_for_repair"
+                android:layout_alignRight="@id/main_home_graphic_for_repair"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/cocogoose_trial"
+                android:gravity="center"
+                android:text="Coming soon"
+                android:textColor="@color/colorPrimaryDark" />
+
         </RelativeLayout>
 
     </ScrollView>
@@ -100,10 +184,10 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_home_nav"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_app_bar"
-        android:background="@color/light_grey"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        android:background="@color/light_grey"
+        app:menu="@menu/bottom_app_bar"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </RelativeLayout>

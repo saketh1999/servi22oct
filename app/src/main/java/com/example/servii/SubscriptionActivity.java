@@ -7,19 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class AddressActivity extends AppCompatActivity {
+public class SubscriptionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_address);
+        setContentView(R.layout.activity_subscription);
 
-        Button cont=findViewById(R.id.add_continue);
+        View cont=findViewById(R.id.sub_shedule_wash);
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(AddressActivity.this, PaymentActivity.class));
+                startActivity(new Intent(SubscriptionActivity.this, DetailsActivity.class));
             }
         });
+
     }
 }

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/sub_back"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <ImageView
+        android:id="@+id/sub_details"
+        android:layout_width="wrap_content"
+        android:layout_height="123dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/box_darkgrey"
+        android:background="@color/orange"
+        android:layout_marginTop="71dp"/>
+
+
+    <TextView
+        android:id="@+id/sub_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sub_details"
+        android:layout_alignRight="@id/sub_details"
+       android:layout_alignTop="@id/sub_details"
+        android:layout_marginTop="30dp"
+        android:text="Your subscription is about to expire."
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sub_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sub_details"
+        android:layout_alignRight="@id/sub_details"
+        android:layout_alignTop="@id/sub_details"
+        android:layout_marginTop="75dp"
+        android:text="Click here to renew!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/sub_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_app_bar"
+        android:background="@color/light_grey"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ScrollView
+        android:id="@+id/sub_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_details"
+        android:layout_above="@id/sub_nav"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="11dp"
+       android:layout_marginBottom="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/sub_relScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sub_chip"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/sub_ne4"
+                android:layout_alignRight="@id/sub_ne4"
+                android:layout_alignBottom="@id/sub_ne4"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/sub_ne3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MANAGE SUBSCRIPTION"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/sub_ne4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Your subscription is active"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/sub_shedule_wash"
+                android:layout_width="wrap_content"
+                android:layout_height="121dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/box_darkgrey"
+                android:layout_below="@id/sub_ne4"
+                android:layout_marginTop="15dp"/>
+
+            <View
+                android:id="@+id/sub_shedule_cleaning"
+                android:layout_width="wrap_content"
+                android:layout_height="121dp"
+                android:layout_alignLeft="@id/sub_shedule_wash"
+                android:layout_alignRight="@id/sub_shedule_wash"
+                android:layout_below="@id/sub_shedule_wash"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/box_darkgrey" />
+
+            <View
+                android:id="@+id/sub_shedule_polish"
+                android:layout_width="wrap_content"
+                android:layout_height="121dp"
+               android:layout_below="@id/sub_shedule_cleaning"
+                android:layout_alignLeft="@id/sub_shedule_cleaning"
+                android:layout_alignRight="@id/sub_shedule_cleaning"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/box_darkgrey" />
+
+            <TextView
+                android:id="@+id/sub_ne5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/sub_shedule_wash"
+                android:layout_alignRight="@id/sub_shedule_wash"
+                android:layout_alignLeft="@id/sub_shedule_wash"
+                android:layout_alignBottom="@id/sub_shedule_wash"
+                android:gravity="center"
+                android:text="Set washing schedule"
+                android:fontFamily="@font/cocogoose_trial"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/sub_ne6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/sub_shedule_cleaning"
+                android:layout_alignRight="@id/sub_shedule_cleaning"
+                android:layout_alignLeft="@id/sub_shedule_cleaning"
+                android:layout_alignBottom="@id/sub_shedule_cleaning"
+                android:gravity="center"
+                android:text="Schedule interior cleaning"
+                android:fontFamily="@font/cocogoose_trial"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/sub_ne7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/sub_shedule_polish"
+                android:layout_alignRight="@id/sub_shedule_polish"
+                android:layout_alignLeft="@id/sub_shedule_polish"
+                android:layout_alignBottom="@id/sub_shedule_polish"
+                android:gravity="center"
+                android:text="Schedule polish"
+                android:fontFamily="@font/cocogoose_trial"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/sub_ne8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/sub_shedule_wash"
+                android:layout_alignTop="@id/sub_shedule_wash"
+                android:layout_alignRight="@id/sub_shedule_wash"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:text="Prefered time slot for washing"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/sub_remained_cleaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/sub_shedule_cleaning"
+                android:layout_alignTop="@id/sub_shedule_cleaning"
+                android:layout_alignRight="@id/sub_shedule_cleaning"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:text="1/1 remaining this week"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/sub_remained_polish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/sub_shedule_polish"
+                android:layout_alignTop="@id/sub_shedule_polish"
+                android:layout_alignRight="@id/sub_shedule_polish"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:text="10/10 remaining this month"
+                android:textColor="@color/colorAccent" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

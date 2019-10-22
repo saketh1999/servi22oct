@@ -71,7 +71,7 @@
         android:layout_alignLeft="@id/pay_ne3"
         android:layout_alignTop="@id/pay_ne4"
         android:layout_alignRight="@id/pay_ne3"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/box_darkgrey" />
 
     <View
@@ -81,7 +81,7 @@
         android:layout_below="@id/pay_paytm"
         android:layout_alignLeft="@id/pay_ne3"
         android:layout_alignRight="@id/pay_ne3"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/box_darkgrey" />
 
     <View
@@ -91,7 +91,7 @@
         android:layout_above="@id/pay_ne5"
         android:layout_alignLeft="@id/pay_ne3"
         android:layout_alignRight="@id/pay_ne3"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/box_darkgrey" />
 
     <TextView
@@ -242,7 +242,7 @@
         android:layout_alignBottom="@id/pay_cash"
         android:layout_marginTop="12dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginBottom="45dp"
         app:srcCompat="@drawable/ic_arrow_right" />
 
 </RelativeLayout>

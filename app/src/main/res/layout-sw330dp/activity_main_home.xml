@@ -101,6 +101,97 @@
         android:layout_marginTop="135dp"
         android:background="@drawable/box_darkgrey" />
 
+    <TextView
+        android:id="@+id/main_home_ne4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/main_home_graphic_for_wash"
+        android:layout_alignTop="@id/main_home_graphic_for_wash"
+        android:layout_alignRight="@id/main_home_graphic_for_wash"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="---Graphic for wash---"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/main_home_ne5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/main_home_graphic_for_wash"
+        android:layout_alignBottom="@id/main_home_graphic_for_wash"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="5 days remaining"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/main_home_rightArrow"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_home_graphic_for_wash"
+        android:layout_alignRight="@id/main_home_graphic_for_wash"
+        android:layout_alignBottom="@id/main_home_graphic_for_wash"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="65dp"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+    <TextView
+        android:id="@+id/main_home_ne6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/main_home_graphic_for_service"
+        android:layout_alignTop="@id/main_home_graphic_for_service"
+        android:layout_alignRight="@id/main_home_graphic_for_service"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="--Graphic for servicing--"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/main_home_ne7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_home_ne6"
+        android:layout_alignLeft="@id/main_home_graphic_for_service"
+        android:layout_alignRight="@id/main_home_graphic_for_service"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/cocogoose_trial"
+        android:gravity="center"
+        android:text="Coming soon"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/main_home_ne8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/main_home_graphic_for_repair"
+        android:layout_alignTop="@id/main_home_graphic_for_repair"
+        android:layout_alignRight="@id/main_home_graphic_for_repair"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="--Graphic for repair--"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/main_home_ne9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_home_ne8"
+        android:layout_alignLeft="@id/main_home_graphic_for_repair"
+        android:layout_alignRight="@id/main_home_graphic_for_repair"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/cocogoose_trial"
+        android:gravity="center"
+        android:text="Coming soon"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
 </RelativeLayout>
 
     </ScrollView>

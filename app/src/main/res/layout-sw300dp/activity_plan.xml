@@ -4,6 +4,24 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <ImageView
+        android:id="@+id/plan_ne"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/plan_ne15"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/plan_ne"
+        android:layout_marginTop="124dp"
+        android:background="@color/dark_grey" />
+
     <TextView
         android:id="@+id/plan_customer"
         android:layout_width="wrap_content"
@@ -33,7 +51,8 @@
         android:background="@color/orange"
         android:text="Activate FREE trial (5 days)"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textAllCaps="false"/>
 
     <TextView
         android:id="@+id/plan_ne1"

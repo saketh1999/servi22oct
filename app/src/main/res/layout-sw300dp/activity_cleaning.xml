@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/cl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cl_ne1"
+        android:layout_alignBottom="@id/cl_ne2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/cl_ne1"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <TextView
+        android:id="@+id/cl_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/cl_ne6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="12dp"
+        android:text="customer care"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/cl_ne5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/cl_ne6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="Need help? Contact                               "
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/cl_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
+    <View
+        android:id="@+id/cl_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/cl_ne1"
+        android:layout_marginTop="91dp"
+        android:background="@color/dark_grey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cl_ne2"
+        android:layout_marginTop="15dp"
+        android:layout_above="@id/cl_ne5"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cl_tue"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_mon"
+                android:layout_alignLeft="@id/cl_mon"
+                android:layout_alignRight="@id/cl_mon"
+                android:gravity="center"
+                android:text="Tue"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_fri"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_thu"
+                android:layout_alignLeft="@id/cl_mon"
+                android:layout_alignRight="@id/cl_mon"
+                android:gravity="center"
+                android:text="Fri"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/cl_days"
+                android:layout_width="80dp"
+                android:layout_height="210dp"
+                android:layout_below="@id/cl_ne4"
+                android:layout_alignLeft="@id/cl_ne4"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/box_darkgrey" />
+
+            <TextView
+                android:id="@+id/cl_11am"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_10am"
+                android:layout_alignLeft="@id/cl_9am"
+                android:layout_alignRight="@id/cl_9am"
+                android:gravity="center"
+                android:text="11:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_9am"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@id/cl_time"
+                android:layout_alignTop="@id/cl_time"
+                android:layout_alignRight="@id/cl_time"
+                android:gravity="center"
+                android:text="9:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/cl_time"
+                android:layout_width="80dp"
+                android:layout_height="210dp"
+                android:layout_below="@id/cl_ne4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="21dp"
+                android:layout_toRightOf="@id/cl_days"
+                android:background="@drawable/box_darkgrey" />
+
+            <TextView
+                android:id="@+id/cl_2pm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_1pm"
+                android:layout_alignLeft="@id/cl_9am"
+                android:layout_alignRight="@id/cl_9am"
+                android:gravity="center"
+                android:text="14:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_10am"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_9am"
+                android:layout_alignLeft="@id/cl_9am"
+                android:layout_alignRight="@id/cl_9am"
+                android:gravity="center"
+                android:text="10:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_12pm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_11am"
+                android:layout_alignLeft="@id/cl_9am"
+                android:layout_alignRight="@id/cl_9am"
+                android:gravity="center"
+                android:text="12:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_wed"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_tue"
+                android:layout_alignLeft="@id/cl_mon"
+                android:layout_alignRight="@id/cl_mon"
+                android:gravity="center"
+                android:text="Wed"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_1pm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_12pm"
+                android:layout_alignLeft="@id/cl_9am"
+                android:layout_alignRight="@id/cl_9am"
+                android:gravity="center"
+                android:text="13:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@id/cl_days"
+                android:layout_alignTop="@id/cl_days"
+                android:layout_alignRight="@id/cl_days"
+                android:gravity="center"
+                android:text="Mon"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_ne4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/cl_ne3"
+                android:layout_alignTop="@id/cl_ne3"
+                android:layout_alignRight="@id/cl_ne3"
+                android:layout_marginTop="25dp"
+                android:text="Schedule next interior cleaning"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/cl_sat"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_fri"
+                android:layout_alignLeft="@id/cl_mon"
+                android:layout_alignRight="@id/cl_mon"
+                android:gravity="center"
+                android:text="Sat"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_sat"
+                android:layout_alignLeft="@id/cl_mon"
+                android:layout_alignRight="@id/cl_mon"
+                android:gravity="center"
+                android:text="Sun"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_wed"
+                android:layout_alignLeft="@id/cl_mon"
+                android:layout_alignRight="@id/cl_mon"
+                android:gravity="center"
+                android:text="Thu"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cl_ne3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="INTERIOR CLEANING"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cl_3pm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/cl_2pm"
+                android:layout_alignLeft="@id/cl_9am"
+                android:layout_alignRight="@id/cl_9am"
+                android:gravity="center"
+                android:text="15:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cl_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/cl_days"
+                android:layout_alignLeft="@id/cl_ne4"
+                android:layout_alignRight="@id/cl_ne4"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/button"
+                android:text="Schedule"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

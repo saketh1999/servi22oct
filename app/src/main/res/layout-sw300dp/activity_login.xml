@@ -4,6 +4,30 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <TextView
+        android:id="@+id/login_ne8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="By creating an account I accept the                                         "
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/login_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_ne8"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="15dp"
+        android:text="Terms And Conditions"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
     <com.bachors.prefixinput.EditText
         android:id="@+id/login_phone"
         android:layout_width="wrap_content"
@@ -32,7 +56,6 @@
         android:ems="10"
         android:inputType="phone"
         android:text=""
-        android:hint="Enter OTP"
         android:visibility="invisible"
         android:textColorHint="@color/colorAccent"
         android:textColorLink="@color/colorPrimary"
@@ -58,11 +81,11 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/login_ne3"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="135dp"
+        android:layout_marginLeft="110dp"
         android:layout_marginBottom="15dp"
         android:text="@string/sign_up"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12sp" />
+        android:textSize="10sp" />
 
     <ImageView
         android:id="@+id/login_ne1"
@@ -90,7 +113,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:text="Don't have an account?                "
-        android:textSize="12sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/login_ne4"

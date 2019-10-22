@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sch_back"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sch_ne1"
+        android:layout_alignBottom="@id/sch_ne2"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="-40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/sch_ne1"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <Button
+        android:id="@+id/sch_save"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/sch_ne10"
+        android:layout_alignLeft="@id/sch_ne10"
+        android:layout_alignRight="@id/sch_ne10"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/button"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/sch_ne11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sch_ne7"
+        android:layout_alignTop="@id/sch_ne10"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="On weekends, wash my car between"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/sch_ne11"
+        android:layout_alignLeft="@id/sch_ne11"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/box_grey" />
+
+    <TextView
+        android:id="@+id/sch_ne12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/spinner3"
+        android:layout_alignBottom="@id/spinner3"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/spinner3"
+        android:text="and"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@id/sch_ne12"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/sch_ne12"
+        android:background="@drawable/box_grey" />
+
+    <View
+        android:id="@+id/sch_ne10"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:layout_below="@id/sch_ne7"
+        android:layout_alignLeft="@id/sch_ne4"
+        android:layout_alignRight="@id/sch_ne4"
+        android:layout_marginTop="31dp"
+        android:background="@null" />
+
+    <View
+        android:id="@+id/sch_ne7"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:layout_below="@id/sch_ne4"
+        android:layout_alignLeft="@id/sch_ne4"
+        android:layout_alignRight="@id/sch_ne4"
+        android:layout_marginTop="31dp"
+        android:background="@null" />
+
+    <ImageView
+        android:id="@+id/sch_ne1"
+        android:layout_width="480dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
+    <View
+        android:id="@+id/sch_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/sch_ne1"
+        android:layout_marginTop="171dp"
+        android:background="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/sch_ne4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sch_ne3"
+        android:layout_alignTop="@id/sch_ne3"
+        android:layout_alignRight="@id/sch_ne3"
+        android:layout_marginTop="45dp"
+        android:text="Tell us when to wash your vehicle"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/sch_ne3"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sch_ne2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="WASHING SCHEDULE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/sch_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sch_ne6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="190dp"
+        android:layout_marginBottom="19dp"
+        android:text="customer care"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/sch_ne5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/sch_ne6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:text="Need help? Contact                               "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sch_ne8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sch_ne7"
+        android:layout_alignTop="@id/sch_ne7"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="On weekdays, wash my car before  "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="96dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/sch_ne8"
+        android:layout_alignLeft="@id/sch_ne8"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/box_grey" />
+
+    <TextView
+        android:id="@+id/sch_ne9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/spinner"
+        android:layout_alignBottom="@id/spinner"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/spinner"
+        android:text="A.M. or after"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@id/sch_ne9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/sch_ne9"
+        android:background="@drawable/box_grey" />
+
+    <TextView
+        android:id="@+id/sch_ne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/spinner"
+        android:layout_alignBottom="@id/spinner"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/spinner2"
+        android:text="P.M."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
+</RelativeLayout>
