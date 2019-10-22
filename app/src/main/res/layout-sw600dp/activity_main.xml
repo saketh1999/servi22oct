@@ -5,6 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ProgressBar
+        android:id="@+id/main_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:indeterminateDrawable="@drawable/orangecolor"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/main_email"
+
+        android:visibility="invisible"
+        >
+
+    </ProgressBar>
 
     <EditText
         android:id="@+id/main_email"
@@ -132,6 +145,7 @@
         android:layout_marginLeft="6dp"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
+
         app:srcCompat="@drawable/google" />
 
     <ImageView

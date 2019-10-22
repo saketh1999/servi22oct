@@ -3,6 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:id="@+id/main_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:indeterminateDrawable="@drawable/orangecolor"
+
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/main_email"
+
+        android:visibility="invisible"
+        >
+
+    </ProgressBar>
 
     <EditText
         android:id="@+id/main_email"

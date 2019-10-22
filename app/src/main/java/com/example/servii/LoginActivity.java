@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,12 +41,15 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
     private String mVerificationId;
+    private ProgressBar progressBar;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     private int flag=0, flag2=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        progressBar=findViewById(R.id.login_progress);
 
         phone=(EditText) findViewById(R.id.login_phone);
         otp=(android.widget.EditText) findViewById(R.id.login_otp);
@@ -58,6 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                progressBar.setVisibility(View.VISIBLE);
                 if(flag==0) {
                     String mob = phone.getText().toString().trim();
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
@@ -79,6 +84,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
                                         if (task.isSuccessful()) {
+                                            progressBar.setVisibility(View.INVISIBLE);
                                             FirebaseUser user = task.getResult().getUser();
                                             updateUI(user);
                                             if(isNew==true)
@@ -94,11 +100,13 @@ public class LoginActivity extends AppCompatActivity {
                                             }
                                             else
                                             {
+                                                progressBar.setVisibility(View.INVISIBLE);
                                                 Toast.makeText(LoginActivity.this, "Authentication successful",
                                                         Toast.LENGTH_SHORT).show();
                                                 startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                                             }
                                         } else {
+                                            progressBar.setVisibility(View.INVISIBLE);
                                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                                     Toast.LENGTH_SHORT).show();
                                             updateUI(null);

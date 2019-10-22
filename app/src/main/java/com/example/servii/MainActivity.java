@@ -7,12 +7,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,12 +61,15 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseUser user;
     private static final String TAG="MainActivity";
     private CallbackManager mCallbackManager;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setId();
+        progressBar=findViewById(R.id.main_progress);
+
 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
@@ -80,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(Validate())
                 {
+                    progressBar.setVisibility(View.VISIBLE);
                     String e1=email.getText().toString().trim();
                     String p1=password.getText().toString().trim();
                     mAuth.createUserWithEmailAndPassword(e1,p1).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
@@ -87,13 +94,17 @@ public class MainActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if(task.isSuccessful()){
+                                progressBar.setVisibility(View.INVISIBLE);
                                 Toast.makeText(MainActivity.this, "Log in successful",Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(MainActivity.this, VerifyActivity.class));
+
                             }
                             else{
+                                progressBar.setVisibility(View.INVISIBLE);
                                 String message=task.getException().toString();
 
                                 Toast.makeText(MainActivity.this, "Error occured.:   "+message,Toast.LENGTH_LONG).show();
+
                             }
                         }
                     });
@@ -113,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
         google.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
                 startActivityForResult(signInIntent, 101 );
             }
@@ -121,22 +133,26 @@ public class MainActivity extends AppCompatActivity {
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                progressBar.setVisibility(View.VISIBLE);
                 LoginManager.getInstance().logInWithReadPermissions(MainActivity.this, Arrays.asList("email", "public_profile"));
                 LoginManager.getInstance().registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
+                        progressBar.setVisibility(View.INVISIBLE);
                         Log.d(TAG, "facebook:onSuccess:" + loginResult);
                         handleFacebookAccessToken(loginResult.getAccessToken());
                     }
 
                     @Override
                     public void onCancel() {
+                        progressBar.setVisibility(View.INVISIBLE);
                         Log.d(TAG, "facebook:onCancel");
                         // ...
                     }
 
                     @Override
                     public void onError(FacebookException error) {
+                        progressBar.setVisibility(View.INVISIBLE);
                         Log.d(TAG, "facebook:onError", error);
                         // ...
                     }
@@ -187,6 +203,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+
         super.onActivityResult(requestCode, resultCode, data);
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         mCallbackManager.onActivityResult(requestCode, resultCode, data);
@@ -196,8 +213,10 @@ public class MainActivity extends AppCompatActivity {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
                 if(account !=null)
-                    firebaseAuthWithGoogle(account);
+                {firebaseAuthWithGoogle(account);
+                    progressBar.setVisibility(View.INVISIBLE);}
             } catch (ApiException e) {
+                progressBar.setVisibility(View.INVISIBLE);
                 // Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e);
                 Toast.makeText(MainActivity.this, "Google sign in failed", Toast.LENGTH_SHORT).show();
@@ -207,6 +226,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
 
+
         AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -214,6 +234,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+
                             boolean isNew = task.getResult().getAdditionalUserInfo().isNewUser();
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(MainActivity.this, "Google sign in successful", Toast.LENGTH_SHORT).show();
