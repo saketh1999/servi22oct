@@ -17,6 +17,30 @@
         > </ProgressBar>
 
 
+    <TextView
+        android:id="@+id/login_ne8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="By creating an account I accept the                                            "
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/login_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_ne8"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="290dp"
+        android:layout_marginBottom="25dp"
+        android:text="Terms And Conditions"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
     <com.bachors.prefixinput.EditText
         android:id="@+id/login_phone"
         android:layout_width="wrap_content"
@@ -46,7 +70,6 @@
         android:inputType="phone"
         android:text=""
         android:visibility="invisible"
-        android:hint="Enter OTP"
         android:textColorHint="@color/colorAccent"
         android:textColorLink="@color/colorPrimary"
         android:textSize="20sp" />

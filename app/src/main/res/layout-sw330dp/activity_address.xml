@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/add_ne7"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="19dp"
+        android:text="customer care"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/add_ne6"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/add_ne7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:text="Need help? Contact                               "
+        android:textSize="14sp" />
+
+
+
+    <ImageView
+        android:id="@+id/add_back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-10dp"
+
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <TextView
+        android:id="@+id/add_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/add_ne2"
+        android:layout_toRightOf="@id/add_ne2"
+        android:text="Mumbai" />
+
+    <ImageView
+        android:id="@+id/add_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
+    <TextView
+        android:id="@+id/add_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/add_ne1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="92dp"
+        android:text="Location-> "
+
+        android:textColor="@color/colorAccent" />
+
+    <View
+        android:id="@+id/add_ne3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/add_ne1"
+        android:layout_marginTop="131dp"
+        android:background="@color/dark_grey" />
+
+    <ScrollView
+        android:id="@+id/add_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_ne3"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/add_ne6"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:id="@+id/add_rel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/rel_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_ne4"
+                android:layout_alignLeft="@id/add_ne4"
+                android:layout_alignRight="@+id/add_ne4"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="@color/dark_grey"
+                android:ems="10"
+                android:hint="Building"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/add_street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel_building"
+                android:layout_alignLeft="@id/rel_building"
+                android:layout_alignRight="@+id/rel_building"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/dark_grey"
+                android:ems="10"
+                android:hint="Colony/ Street/ Locality"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/rel_landmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_ne10"
+                android:layout_alignLeft="@id/add_ne10"
+                android:layout_alignRight="@+id/add_ne10"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/dark_grey"
+                android:ems="10"
+                android:hint="E.g. Near Queen Hills PG"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/add_additional"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_below="@id/add_ne11"
+                android:layout_alignLeft="@id/add_ne11"
+                android:layout_alignRight="@id/add_ne11"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/box_darkgrey"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/add_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/add_additional"
+                android:layout_alignLeft="@id/add_additional"
+                android:layout_alignRight="@id/add_additional"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button"
+                android:text="Continue to payment"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+            android:id="@+id/add_ne4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:text="CONFIRM ADDRESS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/add_ne5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/add_ne4"
+            android:layout_alignTop="@id/add_ne4"
+            android:layout_alignRight="@id/add_ne4"
+            android:layout_marginTop="35dp"
+            android:text="Tell us where you park your vehicle"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/add_ne8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/add_ne5"
+                android:layout_alignTop="@id/add_ne5"
+                android:layout_alignRight="@id/add_ne5"
+                android:layout_marginTop="50dp"
+                android:text="Street address"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/add_ne9"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/add_street"
+                android:layout_alignBottom="@id/add_street"
+                android:layout_alignRight="@id/add_street"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/untitled" />
+
+            <TextView
+                android:id="@+id/add_ne10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/add_street"
+                android:layout_alignTop="@id/add_street"
+                android:layout_alignRight="@id/add_street"
+                android:layout_marginTop="60dp"
+                android:text="Landmark"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/add_ne11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/rel_landmark"
+                android:layout_alignTop="@id/rel_landmark"
+                android:layout_alignRight="@id/rel_landmark"
+                android:layout_marginTop="60dp"
+                android:text="Additional information"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

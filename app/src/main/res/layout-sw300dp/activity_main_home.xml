@@ -69,8 +69,8 @@
                 android:id="@+id/main_home_graphic_for_wash"
                 android:layout_width="wrap_content"
                 android:layout_height="135dp"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/box_darkgrey"/>
+                android:background="@drawable/box_darkgrey" />
+
             <TextView
                 android:id="@+id/view_txt"
                 android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
                 android:layout_marginTop="10dp"
                 />
             <ImageButton
-                android:id="@+id/main_home_image_btn"
+                android:id="@+id/main_home_rightArrow"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_below="@+id/view_txt"

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/det_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/det_ne1"
+        android:layout_alignBottom="@id/det_ne2"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/det_ne1"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <TextView
+        android:id="@+id/det_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/det_ne13"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="19dp"
+        android:text="customer care"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/det_ne1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3" />
+
+    <View
+        android:id="@+id/det_ne2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/det_ne1"
+        android:layout_marginTop="131dp"
+        android:background="@color/dark_grey" />
+
+    <View
+        android:id="@+id/det_ne12"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/det_ne13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:text="Need help? Contact                               "
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/det_ne2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/det_ne12"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/det_vehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/det_ne5"
+                android:layout_alignTop="@id/det_ne5"
+                android:layout_alignRight="@id/det_ne5"
+                android:layout_alignBottom="@id/det_ne5"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/det_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/det_addAddress"
+                android:layout_alignTop="@id/det_addAddress"
+                android:layout_alignRight="@id/det_addAddress"
+                android:layout_marginTop="85dp"
+                android:background="@drawable/button"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/det_address"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/det_ne7"
+                android:layout_alignTop="@id/det_ne7"
+                android:layout_alignRight="@id/det_ne7"
+                android:layout_alignBottom="@id/det_ne7"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/det_showAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/det_ne7"
+                android:layout_alignLeft="@id/det_ne7"
+                android:layout_alignRight="@id/det_ne7"
+                android:background="@drawable/box_darkgrey"
+                android:text="Address"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/det_addAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/det_showAddress"
+                android:layout_alignLeft="@id/det_showAddress"
+                android:layout_alignRight="@id/det_showAddress"
+                android:background="@drawable/box_darkgrey"
+                android:gravity="center"
+                android:text="Add new address"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/det_ne3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"
+                android:text="VERIFY DETAILS"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/det_ne4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/det_ne3"
+                android:layout_alignTop="@id/det_ne3"
+                android:layout_alignRight="@id/det_ne3"
+                android:layout_marginTop="35dp"
+                android:text="Confirm your saved details"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/det_ne5"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/det_ne3"
+                android:layout_alignTop="@id/det_ne4"
+                android:layout_alignRight="@id/det_ne3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/box_darkgrey" />
+
+            <ImageView
+                android:id="@+id/det_ne6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/det_ne5"
+                android:layout_alignRight="@id/det_ne5"
+                android:layout_alignBottom="@id/det_ne5"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/spinner" />
+
+            <View
+                android:id="@+id/det_ne7"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/det_ne5"
+                android:layout_marginTop="70dp"
+                android:layout_alignRight="@id/det_ne3"
+                android:layout_alignLeft="@id/det_ne3"
+                android:background="@drawable/box_darkgrey" />
+
+            <ImageView
+                android:id="@+id/det_ne8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/det_ne7"
+                android:layout_alignRight="@id/det_ne7"
+                android:layout_alignBottom="@id/det_ne7"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/spinner" />
+
+            <View
+                android:id="@+id/det_ne9"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_below="@id/det_showAddress"
+                android:layout_alignLeft="@id/det_showAddress"
+                android:layout_alignRight="@id/det_showAddress"
+                android:layout_marginTop="-1dp"
+                android:background="@color/orange" />
+
+            <ImageView
+                android:id="@+id/det_ne10"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/det_addAddress"
+                android:layout_alignTop="@id/det_addAddress"
+                android:layout_alignBottom="@id/det_addAddress"
+                android:layout_marginLeft="50dp"
+                app:srcCompat="@drawable/ic_minimize" />
+
+            <ImageView
+                android:id="@+id/det_ne11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/det_ne10"
+                android:layout_alignTop="@+id/det_ne10"
+                android:layout_alignRight="@+id/det_ne10"
+                android:layout_alignBottom="@id/det_ne10"
+                app:srcCompat="@drawable/ic_add" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

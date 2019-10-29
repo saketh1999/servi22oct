@@ -4,8 +4,11 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+
     <ImageButton
-        android:id="@+id/vehicle_2whiller"
+        android:id="@+id/vehicle_2wheeler"
+
         android:layout_width="wrap_content"
         android:layout_height="110dp"
         android:layout_alignLeft="@id/vehicle_ne4"
@@ -15,12 +18,15 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/box_orange" />
 
+
+
     <ImageButton
-        android:id="@+id/vehicle_4whiller"
+        android:id="@+id/vehicle_4wheeler"
+
         android:layout_width="wrap_content"
         android:layout_height="110dp"
         android:layout_alignLeft="@id/vehicle_ne7"
-        android:layout_alignTop="@id/vehicle_2whiller"
+        android:layout_alignTop="@id/vehicle_2wheeler"
         android:layout_alignRight="@id/vehicle_ne4"
         android:layout_marginLeft="40dp"
         android:background="@drawable/box_orange" />
@@ -39,23 +45,24 @@
 
     <Spinner
         android:id="@+id/vehicle_spinner"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/vehicle_ne10"
         android:layout_alignBottom="@id/vehicle_ne10"
+        android:layout_marginRight="-40dp"
+        android:layout_marginBottom="0dp"
         android:layout_toLeftOf="@id/vehicle_ne11"
         android:layout_toRightOf="@id/vehicle_ne10"
-        android:layout_marginRight="-20dp"
-        android:background="@null"></Spinner>
+        android:background="@null" />
 
 
     <Button
         android:id="@+id/vehicle_continue"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_alignLeft="@id/vehicle_2whiller"
+        android:layout_alignLeft="@id/vehicle_2wheeler"
         android:layout_alignTop="@id/vehicle_ne10"
-        android:layout_alignRight="@id/vehicle_4whiller"
+        android:layout_alignRight="@id/vehicle_4wheeler"
         android:layout_marginTop="50dp"
         android:background="@drawable/button"
         android:text="Continue"
@@ -128,7 +135,7 @@
         android:id="@+id/vehicle_ne7"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/vehicle_2whiller"
+        android:layout_alignTop="@id/vehicle_2wheeler"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:gravity="center"
@@ -140,9 +147,9 @@
         android:id="@+id/vehicle_ne8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/vehicle_2whiller"
-        android:layout_alignTop="@id/vehicle_2whiller"
-        android:layout_alignRight="@id/vehicle_2whiller"
+        android:layout_alignLeft="@id/vehicle_2wheeler"
+        android:layout_alignTop="@id/vehicle_2wheeler"
+        android:layout_alignRight="@id/vehicle_2wheeler"
         android:layout_marginTop="115dp"
         android:gravity="center"
         android:text="2 Wheeler"
@@ -153,9 +160,9 @@
         android:id="@+id/vehicle_ne9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/vehicle_4whiller"
-        android:layout_alignTop="@id/vehicle_4whiller"
-        android:layout_alignRight="@id/vehicle_4whiller"
+        android:layout_alignLeft="@id/vehicle_4wheeler"
+        android:layout_alignTop="@id/vehicle_4wheeler"
+        android:layout_alignRight="@id/vehicle_4wheeler"
         android:layout_marginTop="115dp"
         android:gravity="center"
         android:text="4 Wheeler"
@@ -166,22 +173,23 @@
         android:id="@+id/vehicle_ne10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/vehicle_2whiller"
-        android:layout_alignTop="@id/vehicle_2whiller"
+        android:layout_alignLeft="@id/vehicle_2wheeler"
+        android:layout_alignTop="@id/vehicle_2wheeler"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="150dp"
-        android:text="    My vehicle is"
+        android:text="    My vehicle is  "
         android:textColor="@color/colorAccent"
         android:textSize="16dp" />
 
     <TextView
         android:id="@+id/vehicle_ne11"
-        android:layout_width="wrap_content"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/vehicle_4whiller"
+        android:layout_alignLeft="@id/vehicle_4wheeler"
         android:layout_alignTop="@id/vehicle_ne10"
-        android:layout_alignRight="@id/vehicle_4whiller"
-        android:layout_marginLeft="20dp"
+        android:layout_alignRight="@id/vehicle_4wheeler"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="0dp"
         android:text="   in color"
         android:textColor="@color/colorAccent"
         android:textSize="16dp" />
@@ -203,8 +211,9 @@
         android:layout_alignTop="@id/vehicle_spinner"
         android:layout_alignRight="@id/vehicle_spinner"
         android:layout_alignBottom="@id/vehicle_spinner"
-        android:layout_marginTop="7dp"
-        android:layout_marginRight="-15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="-3dp"
+        android:layout_marginBottom="6dp"
         android:background="@drawable/small_spinner" />
 
     <ImageView
@@ -218,4 +227,10 @@
         android:layout_toLeftOf="@id/velicle_ne1"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/vehi_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone"/>
 </RelativeLayout>

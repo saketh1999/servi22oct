@@ -32,8 +32,6 @@
         android:ems="10"
         android:inputType="phone"
         android:text=""
-        android:hint="Enter OTP"
-        android:visibility="invisible"
         android:textColorHint="@color/colorAccent"
         android:textColorLink="@color/colorPrimary"
         android:textSize="16sp" />

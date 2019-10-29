@@ -6,6 +6,24 @@
 
 
     <ImageView
+        android:id="@+id/plan_ne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/ic_new_servii_logoartboard_3"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/plan_ne15"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignTop="@id/plan_ne"
+        android:layout_marginTop="178dp"
+        android:background="@color/dark_grey" />
+
+    <ImageView
         android:id="@+id/plan_back"
         android:layout_width="80dp"
         android:layout_height="50dp"
@@ -22,7 +40,8 @@
         android:background="@color/orange"
         android:text="Activate FREE trial (5 days)"
         android:textColor="@color/colorPrimary"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
 
     <TextView
         android:id="@+id/plan_customer"
@@ -115,6 +134,17 @@
                 android:layout_marginTop="30dp"
                 android:layout_alignRight="@id/plan_quarterly"
                 android:background="@drawable/box_orange" />
+
+            <TextView
+                android:id="@+id/plan_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/plan_ne6"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/plan_ne6"
+                android:text="click here"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/plan_continue"
@@ -282,16 +312,6 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"/>
 
-            <TextView
-                android:id="@+id/plan_click"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/plan_ne6"
-                android:layout_marginLeft="5dp"
-                android:layout_toRightOf="@id/plan_ne6"
-                android:text="click here"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="14sp" />
         </RelativeLayout>
     </ScrollView>
 

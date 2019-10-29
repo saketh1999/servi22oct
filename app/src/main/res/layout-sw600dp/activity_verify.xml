@@ -33,7 +33,6 @@
         android:inputType="phone"
         android:text=""
         android:visibility="invisible"
-        android:hint="Enter OTP"
         android:textColorHint="@color/colorAccent"
         android:textColorLink="@color/colorPrimary"
         android:textSize="20sp" />
